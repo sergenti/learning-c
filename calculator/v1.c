@@ -12,8 +12,6 @@ my university (POLIMI Politecnico of Milan) requires me to learn.
 
 *******************************************************************************/
 
-// V1: only working with ints
-
 int main()
 {
   printf("Choose the operator you desire\n\n1)somma\n2)differenza\n3)moltiplicazione\n4)divisione\n\n>");
