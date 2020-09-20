@@ -32,7 +32,6 @@ int main()
 
     int c = a + b;
     printf("%d", c);
-    return 0;
   }
   if (operator== 2)
   {
@@ -42,7 +41,6 @@ int main()
 
     int c = a - b;
     printf("%d", c);
-    return 0;
   }
   if (operator== 3)
   {
@@ -52,7 +50,6 @@ int main()
 
     int c = a * b;
     printf("%d", c);
-    return 0;
   }
   if (operator== 4)
   {
@@ -62,7 +59,6 @@ int main()
 
     int c = a / b;
     printf("%d", c);
-    return 0;
   }
   if (operator== - 5)
   {
@@ -73,10 +69,9 @@ int main()
     printf("stronzo il numero va da 1 a 4");
   }
 
-  return 0;
 }
 
-int getA()
+int getA(void)
 {
   int a;
   printf("\nEnter the value of the FIRST number> ");
@@ -84,7 +79,7 @@ int getA()
   return a;
 }
 
-int getB()
+int getB(void)
 {
   int b;
   printf("Enter the value of the SECOND number> ");
