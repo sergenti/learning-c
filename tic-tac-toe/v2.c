@@ -2,8 +2,6 @@
 #include <conio.h>
 #include <stdlib.h>
 
-#define clrscr() printf("\e[1;1H\e[2J")
-
 /******************************************************************************
 
                             Tic-Tac-Toe
@@ -59,7 +57,10 @@ int main()
         for (int i = 1; i <= 9; i++)
         {
             if (choice == i && square[i] == i + '0')
+            {
                 square[i] = mark;
+                return 0;
+            }
             else
             {
                 printf("\nInvalid move");
@@ -78,12 +79,9 @@ int main()
     // Draw the Board
     board();
 
-    int winner = (player % 2) + 1;
-
     // Display the winner
     if (i == 1)
-
-        printf("\n\n\t   Player %d won", winner);
+        printf("\n\n\tPlayer %d won", --player);
     else
         printf("Game draw");
 
@@ -116,28 +114,52 @@ int checkwin()
     //     {3, 5, 7}};
 
     if (square[1] == square[2] && square[2] == square[3])
+    {
+
         return 1;
+    }
 
     else if (square[4] == square[5] && square[5] == square[6])
+    {
+
         return 1;
+    }
 
     else if (square[7] == square[8] && square[8] == square[9])
+    {
+
         return 1;
+    }
 
     else if (square[1] == square[4] && square[4] == square[7])
+    {
+
         return 1;
+    }
 
     else if (square[2] == square[5] && square[5] == square[8])
+    {
+
         return 1;
+    }
 
     else if (square[3] == square[6] && square[6] == square[9])
+    {
+
         return 1;
+    }
 
     else if (square[1] == square[5] && square[5] == square[9])
+    {
+
         return 1;
+    }
 
     else if (square[3] == square[5] && square[5] == square[7])
+    {
+
         return 1;
+    }
 
     else if (
         square[1] != '1' &&
@@ -149,10 +171,16 @@ int checkwin()
         square[7] != '7' &&
         square[8] != '8' &&
         square[9] != '9')
+    {
+
         return 0;
+    }
 
     else
+    {
+
         return -1;
+    }
 };
 
 /**************************************************************************
@@ -163,7 +191,7 @@ int checkwin()
 
 void board()
 {
-    clrscr();
+    system("cls");
     printf("\n\n\t  Tic Tac Toe\n\n");
     printf("  Player 1 (X)  -  Player 2 (O)\n\n");
 
