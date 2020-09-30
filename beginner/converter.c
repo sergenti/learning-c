@@ -1,46 +1,54 @@
-// Converti la distanza da km a metri
+// convert from KMS to MILES and vice versa
 
 #include <stdio.h>
+#include <stdbool.h>
 
 #define KMS_PER_MILE 1.906
 #define MILE_PER_KMS 0.6213
 
 int main(void)
 {
+    bool execution = true;
     int unit_of_measure;
 
-    printf("\t\tCONVERTER\n");
-    printf("press 1 for KMS TO MILES\npress 2 for MILES TO KMS");
-    scanf("%d", &unit_of_measure);
+    double kms;
+    double miles;
 
-    if (unit_of_measure = 0)
+    while (execution)
     {
-        printf("\n\t\tKMS TO MILES\n");
-        double kms;
-        double miles;
 
-        printf("insert kms");
-        scanf("%1f", &kms);
+        printf("CONVERTER\n\n");
+        printf("press 1 for KMS TO MILES\npress 2 for MILES TO KMS\n\n");
+        scanf("%d", &unit_of_measure);
 
-        miles = kms * MILE_PER_KMS;
-        printf("%1f km => %1f miles", kms, miles);
+        if (unit_of_measure == 1)
+        {
+            printf("\nKMS TO MILES\n");
+            printf("insert kms > ");
+            scanf("%lf", &kms);
+
+            miles = kms * MILE_PER_KMS;
+            printf("\n%lf km => %lf miles", kms, miles);
+            execution = false;
+            return (0);
+        }
+        if (unit_of_measure == 2)
+        {
+            printf("\nMILES TO KMS\n");
+            printf("insert miles > ");
+            scanf("%lf", &miles);
+
+            kms = miles * KMS_PER_MILE;
+            printf("\n%lf miles => %lf km", miles, kms);
+            execution = false;
+            return (0);
+        }
+        else
+        {
+            printf("\nplease insert a valid number\n\n");
+            execution = true;
+        }
     }
-    if (unit_of_measure = 1)
-    {
-        printf("\n\t\tMILES TO KMS\n");
-        double miles;
-        double kms;
 
-        printf("insert miles");
-        scanf("%1f", &miles);
-
-        kms = miles * KMS_PER_MILE;
-        printf("%1f miles => %1f km", miles, kms);
-    }
-    else
-    {
-        printf("error");
-    }
-
-    return 0;
+    return (0);
 }

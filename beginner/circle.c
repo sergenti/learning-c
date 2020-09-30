@@ -12,7 +12,7 @@ int main(void)
     double circumference;
 
     printf("Enter Radius> ");
-    scanf("1f", &radius);
+    scanf("%lf", &radius);
 
     // Calculating
     area = PI * radius * radius;
