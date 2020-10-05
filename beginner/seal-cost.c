@@ -4,22 +4,29 @@
 
 #define PI 3.14159
 
+// external fuction used to calculare the area of a circle with desidered diameter
+// A = PI x r^2 = PI x (d/2)^2 = PI x d^2 x 0.25
+double calculateArea(double diameter)
+{
+    double area = PI * diameter * diameter * 0.25;
+    return area;
+}
+
 int main(void)
 {
+    // declaring inputs
     double hole_diameter;
     double edge_diameter;
-
-    double hole_radius;
-    double edge_radius;
-
     double thickness;
     double density;
     double quantity;
-    double weight;
+
+    // declaring outputs
     double rim_area;
     double unit_weight;
+    double weight;
 
-    // Get inner and outer radius dimension and thickness
+    // ask the user to insert the desidered fields
     printf("Inner Diameter in cm > ");
     scanf("%lf", &hole_diameter);
 
@@ -29,7 +36,6 @@ int main(void)
     printf("Thickness in cm > ");
     scanf("%lf", &thickness);
 
-    // Get density and quantity
     printf("Material density in grams per cubic centimeter > ");
     scanf("%lf", &density);
 
@@ -37,15 +43,14 @@ int main(void)
     scanf("%lf", &quantity);
 
     // Calculating
-    hole_radius = hole_diameter / 2.0;
-    edge_radius = edge_diameter / 2.0;
+    rim_area = calculateArea(edge_diameter) - calculateArea(hole_diameter);
 
-    rim_area = PI * edge_radius * edge_radius - PI * hole_radius * hole_radius;
     unit_weight = rim_area * thickness * density;
     weight = unit_weight * quantity;
 
-    // Show weight
-    printf("\nThe expected weight of the batch is %.2f grams\n", weight);
+    // Show output
+    printf("\nThe expected weight of the batch is %.2f grams", weight);
+    printf("\nThe expected weight of each unit is %.2f grams\n", unit_weight);
 
     return 0;
 }

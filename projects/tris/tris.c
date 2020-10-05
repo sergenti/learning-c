@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <conio.h>
-#include <stdlib.h>
 
 char square[10] = {
     'o',
@@ -29,7 +27,7 @@ int main()
 
         player = (player % 2) ? 1 : 2;
 
-        printf("Player %d, enter a number: ", player);
+        printf("\n  Player %d, enter a number: ", player);
         scanf("%d", &choice);
 
         mark = (player == 1) ? 'X' : 'O';
@@ -63,9 +61,10 @@ int main()
 
         else
         {
-            printf("\nInvalid move");
+            printf("\n\tInvalid move!");
+            sleep(2);
             player--;
-            getch();
+            getchar();
         }
 
         i = checkwin();
@@ -77,11 +76,11 @@ int main()
     board();
 
     if (i == 1)
-        printf("Player %d won", --player);
+        printf("\n\tPlayer %d won", --player);
     else
-        printf("Game draw");
+        printf("\tGame draw");
 
-    getch();
+    getchar();
 
     return 0;
 };
@@ -144,26 +143,25 @@ int checkwin()
  *        FUNCTION TO DRAW BOARD OF TIC-TAC-TOE WITH PLAYER MARKS
  * 
 **************************************************************************/
-
 void board()
 {
     system("cls");
-    printf("\n\n\t Tic Tac Toe\n\n");
-    printf("Player 1 (X)  -  PLayer 2 (O)\n\n");
+    printf("\n\n           Tic Tac Toe\n\n");
+    printf("  Player 1 (X)  -  Player 2 (O)\n\n");
 
-    printf("   :   :   \n");
-    printf(" %c : %c : %c \n", square[1], square[2], square[3]);
+    printf("\t     :     :     \n");
+    printf("\t  %c  :  %c  :  %c  \n", square[1], square[2], square[3]);
 
-    printf("___:___:___\n");
-    printf("   :   :   \n");
+    printf("\t_____:_____:_____\n");
+    printf("\t     :     :     \n");
 
-    printf(" %c : %c : %c \n", square[4], square[5], square[6]);
+    printf("\t  %c  :  %c  :  %c  \n", square[4], square[5], square[6]);
 
-    printf("___:___:___\n");
-    printf("   :   :   \n");
+    printf("\t_____:_____:_____\n");
+    printf("\t     :     :     \n");
 
-    printf(" %c : %c : %c \n", square[7], square[8], square[9]);
-    printf("   :   :   \n");
+    printf("\t  %c  :  %c  :  %c  \n", square[7], square[8], square[9]);
+    printf("\t     :     :     \n");
 };
 
 /**************************************************************************
