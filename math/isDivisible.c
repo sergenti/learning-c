@@ -31,7 +31,7 @@ int main(void)
     else
     {
         if (divisor == 0)
-            printf("\033[0;31mERROR: cannot devide by 0!\033[0m\n");
+            printf("\033[0;31m\nERROR: cannot devide by 0!\033[0m\n");
         else
             printf("\033[0;31m\n%d is NOT divisible by %d\033[0m\n", num, divisor);
     }
