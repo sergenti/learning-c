@@ -1,7 +1,6 @@
 // divisor
 
 #include <stdio.h>
-#include <math.h>
 #include <stdbool.h>
 
 int main(void)
@@ -20,14 +19,22 @@ int main(void)
     printf("Enter divisor> ");
     scanf("%d", &divisor);
 
-    // Calculating
-    isDivisible = (num % divisor) == 0;
-    result = num / divisor;
+    // Condition to Verify
+    isDivisible = (divisor != 0 && (num % divisor) == 0);
 
     if (isDivisible)
+    {
+        // Calculating
+        result = num / divisor;
         printf("\033[0;32m\n%d is divisible by %d\n%d : %d = %d\033[0m\n", num, divisor, num, divisor, result);
+    }
     else
-        printf("\033[0;31m\n%d is NOT divisible by %d\033[0m\n", num, divisor);
+    {
+        if (divisor == 0)
+            printf("\033[0;31mERROR: cannot devide by 0!\033[0m\n");
+        else
+            printf("\033[0;31m\n%d is NOT divisible by %d\033[0m\n", num, divisor);
+    }
 
     return 0;
 }
