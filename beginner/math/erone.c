@@ -4,13 +4,13 @@
 
 int main(void)
 {
-    // inputs
+    // inputs (sides of thetriangle)
     double a, b, c;
 
-    // outputs
+    // outputs (obtained by Erone's formula)
     double semiP, area;
 
-    // conditions to be verify
+    // conditions to verify
     bool isValidTriangle;
     bool areValidSides;
 
