@@ -46,6 +46,7 @@ int main()
     }
 
     printf("\033[1;34mAll employees processed");
+    printf("\nTotal payroll is $%8.2f\n\n", totalPay);
 }
 
 void instruct()
