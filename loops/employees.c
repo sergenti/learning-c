@@ -11,7 +11,8 @@ int main()
     char name[20];
 
     // OUTPUT
-    float pay;
+    float pay = 0;
+    float totalPay = 0;
 
     // CONTROL FLOW
     int numberOfEmployees = 0;
@@ -37,6 +38,8 @@ int main()
         scanf("%f", &rate);
 
         pay = rate * hours;
+        totalPay = totalPay + pay;
+
         printf("\nPay is $%6.2f\n\n", pay);
 
         count++;
