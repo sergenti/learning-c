@@ -28,7 +28,7 @@ int main()
         printf("\n\t\033[1;36m   ---- Employee %d ----   \033[0m\n", count + 1);
 
         printf("\nName>");
-        scanf("%c", &name);
+        scanf("%s", &name);
 
         printf("Hours>");
         scanf("%f", &hours);
@@ -42,7 +42,7 @@ int main()
         count++;
     }
 
-    printf("All employees processed");
+    printf("\033[1;34mAll employees processed");
 }
 
 void instruct()
