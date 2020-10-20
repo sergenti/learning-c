@@ -1,27 +1,52 @@
 #include <stdio.h>
 
-int employees(float hours, float rate)
-{
+// PROTOTYPE
+void instruct(void);
 
+int main()
+{
+    // INPUT
+    float hours;
+    float rate;
+    char name[20];
+
+    // OUTPUT
+    float pay;
+
+    // CONTROL FLOW
     int numberOfEmployees = 0;
     int count = 0;
 
-    printf("How many employees?> ");
+    // INIT
+    instruct();
+
+    printf("\nHow many employees do you have?> ");
     scanf("%d", &numberOfEmployees);
 
     while (count < numberOfEmployees)
     {
+        printf("\n\t\033[1;36m   ---- Employee %d ----   \033[0m\n", count + 1);
+
+        printf("\nName>");
+        scanf("%c", &name);
+
         printf("Hours>");
-        scanf("%lf", &hours);
+        scanf("%f", &hours);
 
         printf("Rate>");
-        scanf("%lf", &rate);
+        scanf("%f", &rate);
 
-        float pay = rate * hours;
-        printf("Pay is $%6.2f\n", pay);
+        pay = rate * hours;
+        printf("\nPay is $%6.2f\n\n", pay);
 
         count++;
     }
 
     printf("All employees processed");
+}
+
+void instruct()
+{
+    printf("\n\t\t\033[1;34m  Pay Calculator");
+    printf("\nCalculate the pay of your employees\033[0m\n");
 }
