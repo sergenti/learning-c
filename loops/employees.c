@@ -38,7 +38,7 @@ int main()
         scanf("%f", &rate);
 
         pay = rate * hours;
-        totalPay = totalPay + pay;
+        totalPay += pay;
 
         printf("\nPay is $%6.2f\n\n", pay);
 
