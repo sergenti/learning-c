@@ -5,7 +5,7 @@
 
 #define LIMITE 1000
 
-int main()
+int ese3a()
 {
     int risultato = 0;
 
