@@ -24,6 +24,7 @@ int ese6()
                 bisestile = VERO;
         }
     }
+
     /*
   if ( (anno%4==0) && (!(anno%100==0) || (anno%400==0) ) )
     bisestile = VERO;
