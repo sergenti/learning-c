@@ -27,7 +27,7 @@ int main()
         printf("false\n");
     }
 
-    //comparison operators resolve to true or false
+    //  comparison operators resolve to true or false
 
     int age = 17;
     if (age > 18)
@@ -39,7 +39,7 @@ int main()
         printf("You are not an adult\n");
     }
 
-    //logical operators used to make compound comparisons
+    //  logical operators used to make compound comparisons
 
     double money = 30000; //no comma
 
@@ -55,11 +55,11 @@ int main()
 
     bool isGraduated = true;
 
-    //if(age > 17 && money > 25000 || isGraduated)
-    //{
-    //THIS WILL BE HIT!  //WILL GIVE WARNING
-    //printf("You are a graduated 18+ yr old with $25k\n");
-    //}
+    //  if(age > 17 && money > 25000 || isGraduated)
+    //  {
+    //  THIS WILL BE HIT!  //WILL GIVE WARNING
+    //  printf("You are a graduated 18+ yr old with $25k\n");
+    //  }
 
     //default precedence
     if ((age > 17 && money > 25000) || isGraduated)
@@ -86,12 +86,14 @@ int main()
         printf("You're an old man\n");
     }
     /////////////   single line if  /////////////
-    //only for one statement
+
+    //  only for one statement
     if (age < 150)
         printf("You're possibly alive\n");
     printf("This always executes\n");
 
     /////////////   switch   /////////////
+
     // Good for few options for numeric or char data
 
     int menuChoice = 2;
@@ -115,6 +117,8 @@ int main()
         break;
     }
 
+    // Same thing to happen to multiple cases
+
     switch (menuChoice)
     {
     case 0:
@@ -130,7 +134,7 @@ int main()
         break;
     }
 
-    //DON'T FORGET THE BREAK!::
+    //  DON'T FORGET THE BREAK!::
     menuChoice = 0;
 
     printf("WITHOUT BREAK (Don't do this):\n");
@@ -154,21 +158,20 @@ int main()
 
     balance > 0 ? printf("You has money\n") : printf("You has no money\n");
 
-    //can also use ternary operator for more general things (like assignment)
-    //Basically returns one value if true. other if false.
+    //  Can also use ternary operator for more general things (like assignment)
+    //  Basically returns one value if true. other if false.
     bool hasMoney;
     hasMoney = balance > 0 ? 1 : 0;
 
     printf("HasMoney? 1 is yes 0 is no: %d\n", hasMoney);
 
-    //all of this branching is pointless if you do not get data from outside of hardcoded values
-    //Usually from Db, file, or input.
+    //  All of this branching is pointless if you do not get data from outside of hardcoded values
+    //  Usually from Db, file, or input.
 
     printf("Input your age yo:\n");
     scanf("%d", &age);
     if (age < 13)
-    {
         printf("get outa here son\n");
-    }
+
     return 0;
 }
