@@ -1,4 +1,18 @@
-/* Getting started with linux.
+/*
+
+HOW C GAINED ITS POPULARITY?
+it was the default programing lnguage for unix & linux operative systems.
+
+
+linux is a "unix-like" OS
+
+===========================================================================
+absolute path - from the very beginning C://
+relative path ..
+parent folder .
+===========================================================================
+"-something" is called flag, pass a flag to alter the output
+===========================================================================
 
 Figure out what directory you're in:
     -   pwd
