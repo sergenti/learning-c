@@ -1,8 +1,12 @@
-int letter = 0;
-while (name[letter] != '\0')
+stringLength(char name[])
 {
-    printf("%c\n", name[letter]);
-    letter++;
+    int letter = 0;
+    while (name[letter] != '\0')
+    {
+        printf("%c\n", name[letter]);
+        letter++;
+    }
+    return letter;
 }
 
 // or just using strings.h
