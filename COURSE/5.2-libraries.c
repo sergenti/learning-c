@@ -4,6 +4,7 @@ int square(int input)
 {
     return input * input * input;
 }
+
 int cube(int input)
 {
     return input * input * input;
@@ -34,7 +35,7 @@ void changeVal(int *a)
     *a *= 2;
 }
 
-//promise won't change with ages
+// promise won't change with ages
 int oldestValue(int *ages, int size)
 {
     if (size < 1)
