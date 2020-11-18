@@ -1,4 +1,8 @@
-int asterischi()
+// I like stars, how many do you want?
+
+// IT'S ALL FREE :)
+
+int howManyStars()
 {
     int n;
 
