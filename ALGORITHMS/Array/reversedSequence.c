@@ -7,12 +7,12 @@
 
 #include <stdlib.h>
 
-unsigned short *reverse_seq(unsigned short num)
+int *reverse_seq(int num)
 {
     if (num == 0)
         return NULL;
-    unsigned short *res = (unsigned short *)malloc(sizeof(unsigned short) * num);
-    unsigned short *resHead = res;
+    int *res = (int *)malloc(sizeof(int) * num);
+    int *resHead = res;
     while (num)
     {
         *res++ = num--;
