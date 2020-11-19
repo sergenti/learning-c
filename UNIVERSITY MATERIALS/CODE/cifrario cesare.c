@@ -44,18 +44,17 @@ int main()
 
 void cifrarioCesare(unsigned char stringa[], char startKey, char key)
 {
-    int i;
     char keyMai, keyMin;
     char startKeyMin, startKeyMai;
 
     calcolaChiavi(key, &keyMai, &keyMin);
     calcolaChiavi(startKey, &startKeyMai, &startKeyMin);
 
-    for (i = 0; stringa[i] != '\0'; i++)
+    for (int i = 0; stringa[i] != '\0'; i++)
     {
         if ((stringa[i] >= 'a') && (stringa[i] <= 'z'))
         {
-            //minuscole
+            // minuscole
             stringa[i] = stringa[i] - startKeyMin + keyMin;
             if (stringa[i] > 'z')
                 stringa[i] = stringa[i] - 'z' + 'a' - 1;
@@ -64,7 +63,7 @@ void cifrarioCesare(unsigned char stringa[], char startKey, char key)
         }
         else if ((stringa[i] >= 'A') && (stringa[i] <= 'Z'))
         {
-            //maiuscole
+            // maiuscole
             stringa[i] = stringa[i] - startKeyMai + keyMai;
             if (stringa[i] > 'Z')
                 stringa[i] = stringa[i] - 'Z' + 'A' - 1;

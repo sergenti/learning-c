@@ -6,7 +6,7 @@ Obiettivo dell'insegnamento è introdurre i principali concetti e principi dell'
 
 ## Risultati di apprendimento attesi:
 
-### Knowledge and understanding (DD1)
+**Knowledge and understanding (DD1)**
 
 Comprensione dei principi di rappresentazione delle informazioni e di funzionamento del calcolatore.
 Comprensione del concetto di algoritmo.
@@ -14,15 +14,15 @@ Comprensione delle proprietà, caratteristiche e qualità dei programmi.
 Comprensione della differenza tra linguaggi compilati e interpretati.
 Comprensione delle diverse caratteristiche dei linguaggi di programmazione oggi disponibili.
 
-### Apply knowledge and understanding (DD2)
+**Apply knowledge and understanding (DD2)**
 
 Capacità di progettazione, sviluppo e validazione di programmi di non elevata complessità.
 
-### Making judgements (DD3)
+**Making judgements (DD3)**
 
 Capacità di valutare la bontà di una soluzione informatica (su scala ridotta).
 
-### Lifelong skills (DD5)
+**Lifelong skills (DD5)**
 
 Comprensione dei concetti di base dell’informatica e di come essi si declinino in specifici linguaggi. La comprensione dei concetti è essenziale per imparare ad imparare nuovi linguaggi e strumenti in modo autonomo.
 Argomenti trattati

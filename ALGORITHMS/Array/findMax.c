@@ -1,3 +1,4 @@
+// Find MAX value in array
 
 #define SIZE 3
 int array[];

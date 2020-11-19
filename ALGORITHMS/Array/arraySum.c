@@ -1,3 +1,20 @@
+// ===========================================================
+// GENERAL
+
+#define SIZE 3
+int array[];
+
+int arraySum(int dati[])
+{
+    int somma = 0;
+    for (int i = 0; i < SIZE; i++)
+        somma += dati[i];
+    return somma;
+}
+
+// ===========================================================
+// Codewars
+
 /*
 
 Sum Array
