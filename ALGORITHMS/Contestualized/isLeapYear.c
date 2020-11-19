@@ -3,7 +3,7 @@
 
 // determine if a given year is a leap year
 
-int main()
+bool isLeapYear()
 {
     int year;
     bool isLeap = false;

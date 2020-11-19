@@ -1,33 +1,43 @@
 #include <stdio.h>
 
+enum mesi
+{
+    gennaio = 1,
+    febbraio,
+    marzo,
+    aprile,
+    maggio,
+    giugno,
+    luglio,
+    agosto,
+    settembre,
+    ottobre,
+    novembre,
+    dicembre
+} mese;
+
 int main(void)
 {
-    int todayDay = 17;
-    int todayMonth = 10;
-    int todayYear = 2020;
-    int giorno;
 
-    enum mesi
-    {
-        gennaio = 1,
-        febbraio,
-        marzo,
-        aprile,
-        maggio,
-        giugno,
-        luglio,
-        agosto,
-        settembre,
-        ottobre,
-        novembre,
-        dicembre
-    } mese;
+    int todayDay;
+    int todayMonth;
+    int todayYear;
+
+    int giorno;
+    int mese;
     int anno;
 
     int etaGiorni = 0;
     int etaMesi = 0;
 
-    printf("Inserisci la tua data di nascita: \n");
+    printf("inserisci la data di oggi: ");
+    scanf("%d", &todayDay);
+    printf("Mese: ");
+    scanf("%d", &todayMonth);
+    printf("Anno: ");
+    scanf("%d", &todayYear);
+
+    printf("\n\nInserisci la tua data di nascita: \n");
     printf("Giorno: ");
     scanf("%d", &giorno);
     printf("Mese: ");
