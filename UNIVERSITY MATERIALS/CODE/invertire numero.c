@@ -15,7 +15,7 @@ int ese5()
     while (temp > 0)
     {
         invertito *= 10;
-        invertito += temp % 10;
+        invertito += temp % 10; // resto della divisione
         temp /= 10;
     }
 
