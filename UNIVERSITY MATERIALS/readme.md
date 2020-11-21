@@ -59,6 +59,8 @@ Ad essa si affianca la partecipazione obbligatoria all'attività di laboratorio 
 - Jeri R. Hanly, Elliot B. Koffman, Problem solving e programmazione in C, Apogeo.
 - A. Morzenti, A. Campi, E. Di Nitto Introduzione alla programmazione in Matlab, Esculapio.
 
+</br>
+
 <div align="center">
 
 <img src="https://user-images.githubusercontent.com/55017307/99872326-58a86900-2be1-11eb-9a35-ccd00bd6fdbf.jpg" width="300"/>
