@@ -1,4 +1,8 @@
-# Politecnico di Milano
+<div align="center">
+
+<img src="https://upload.wikimedia.org/wikipedia/it/b/be/Logo_Politecnico_Milano.png" width="400"/>
+
+</div>
 
 ## Obiettivo dell'insegnamento
 
@@ -44,13 +48,20 @@ l corso si rivolge a studenti che abbiano quanto meno una conoscenza elementare 
 La valutazione si basa su una prova scritta con esercizi e domande di teoria.
 Ad essa si affianca la partecipazione obbligatoria all'attività di laboratorio che non verrà valutata.
 
-## Materiale didattico:
-
-Jeri R. Hanly, Elliot B. Koffman, Problem solving e programmazione in C, Apogeo.
-A. Morzenti, A. Campi, E. Di Nitto Introduzione alla programmazione in Matlab, Esculapio.
-
 ## Forma didattica:
 
 Lezioni: 47 Ore.
 Esercitazioni: 38 Ore.
 Laboratorio e altre attività: 15 Ore.
+
+## Materiale didattico:
+
+Jeri R. Hanly, Elliot B. Koffman, Problem solving e programmazione in C, Apogeo.
+A. Morzenti, A. Campi, E. Di Nitto Introduzione alla programmazione in Matlab, Esculapio.
+
+<div align="center">
+
+<img src="https://user-images.githubusercontent.com/55017307/99872326-58a86900-2be1-11eb-9a35-ccd00bd6fdbf.jpg" width="100"/>
+
+</div>
+
