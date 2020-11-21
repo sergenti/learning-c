@@ -1,4 +1,4 @@
-# Polytechnic University of Milan
+# Politecnico di Milano
 
 ## Obiettivo dell'insegnamento
 
