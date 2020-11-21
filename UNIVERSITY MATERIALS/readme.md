@@ -12,11 +12,11 @@ Obiettivo dell'insegnamento è introdurre i principali concetti e principi dell'
 
 **Knowledge and understanding (DD1)**
 
-Comprensione dei principi di rappresentazione delle informazioni e di funzionamento del calcolatore.
-Comprensione del concetto di algoritmo.
-Comprensione delle proprietà, caratteristiche e qualità dei programmi.
-Comprensione della differenza tra linguaggi compilati e interpretati.
-Comprensione delle diverse caratteristiche dei linguaggi di programmazione oggi disponibili.
+- Comprensione dei principi di rappresentazione delle informazioni e di funzionamento del calcolatore.
+- Comprensione del concetto di algoritmo.
+- Comprensione delle proprietà, caratteristiche e qualità dei programmi.
+- Comprensione della differenza tra linguaggi compilati e interpretati.
+- Comprensione delle diverse caratteristiche dei linguaggi di programmazione oggi disponibili.
 
 **Apply knowledge and understanding (DD2)**
 
@@ -50,14 +50,14 @@ Ad essa si affianca la partecipazione obbligatoria all'attività di laboratorio 
 
 ## Forma didattica:
 
-Lezioni: 47 Ore.
-Esercitazioni: 38 Ore.
-Laboratorio e altre attività: 15 Ore.
+- Lezioni: 47 Ore.
+- Esercitazioni: 38 Ore.
+- Laboratorio e altre attività: 15 Ore.
 
 ## Materiale didattico:
 
-Jeri R. Hanly, Elliot B. Koffman, Problem solving e programmazione in C, Apogeo.
-A. Morzenti, A. Campi, E. Di Nitto Introduzione alla programmazione in Matlab, Esculapio.
+- Jeri R. Hanly, Elliot B. Koffman, Problem solving e programmazione in C, Apogeo.
+- A. Morzenti, A. Campi, E. Di Nitto Introduzione alla programmazione in Matlab, Esculapio.
 
 <div align="center">
 
