@@ -4,6 +4,8 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
+//TODO FIX
+
 // Helper Functions
 char getOperator(void);
 void getFraction(int *num, int *denom);
