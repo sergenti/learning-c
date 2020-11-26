@@ -33,10 +33,10 @@ there are built-in functions:
 
 */
 
-malloc();
-calloc();
-realloc();
-free();
+malloc();  // allocates memory to user structure
+calloc();  // allocaes memory to array
+realloc(); // increase or decrease size of arrays
+free();    // delete memory
 
 // !!! POINTERS play a very important role in memory allocation
 // !!! allocated memory can only be accessed through pointers
