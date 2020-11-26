@@ -52,22 +52,15 @@ void instruct_water()
 
 void get_input(double *previous, double *current, double *unpaid)
 {
-    double p, c, u;
 
     printf("previous use of water in gallons > ");
-    scanf("%lf", &p);
+    scanf("%lf", previous);
 
     printf("current use of water in gallons > ");
-    scanf("%lf", &c);
+    scanf("%lf", current);
 
     printf("Unpaid money > ");
-    scanf("%lf", &u);
-
-    *previous = p;
-    *current = c;
-    *unpaid = u;
-
-    return;
+    scanf("%lf", unpaid);
 }
 
 double compute_use_charge(double previous, double current)
@@ -79,22 +72,12 @@ double compute_use_charge(double previous, double current)
 
 double compute_late_charge(double unpaid)
 {
-    double lateCharge;
-
-    if (unpaid > 0)
-        lateCharge = LATE_CHARGE;
-    else
-        lateCharge = 0.0;
-
-    return (lateCharge);
+    return unpaid > 0 ? LATE_CHARGE : 0.0;
 }
 
 void display_bill(double late_charge, double bill, double unpaid)
 {
-    if (late_charge > 0)
-        printf("cojone devi pagare %lf,quindi ti addebbitiamo la misera quantita` di %lf, stronzo\n\nla tua bolletta costa %lf ", unpaid, late_charge, bill);
-    else
-        printf("bellaraga, ti costa: %lf", bill);
 
-    return;
+    late_charge > 0 ? printf("cojone devi pagare %lf,quindi ti addebbitiamo la misera quantita` di %lf, stronzo\n\nla tua bolletta costa %lf ", unpaid, late_charge, bill)
+                    : printf("bellaraga, ti costa: %lf", bill);
 }

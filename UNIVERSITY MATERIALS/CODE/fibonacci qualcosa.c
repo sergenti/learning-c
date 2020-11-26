@@ -1,10 +1,7 @@
 // L'ESERCITATRICE di informatica fa schifo, non sa scrivere codice,
 // non voglio passare per maschilista ma non si capisce un cazzo di quello che scrive
-
-// vaffanculo puttana di merda
 // se ho questo codice disordinato è tutta colpa tua
-
-// fatti un clistere e vai a lavorare al posto di inquinare le mie repo
+// fatti un clistere e vai a lavorare al posto di inquinare le mie repository
 
 #include <stdio.h>
 
