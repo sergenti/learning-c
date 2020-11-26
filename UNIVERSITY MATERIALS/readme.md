@@ -64,8 +64,6 @@ Ad essa si affianca la partecipazione obbligatoria all'attività di laboratorio 
 <div align="center">
 
 <img src="https://user-images.githubusercontent.com/55017307/99872326-58a86900-2be1-11eb-9a35-ccd00bd6fdbf.jpg" width="300"/>
-<img src="https://images-na.ssl-images-amazon.com/images/I/71RTifhRwGL.jpg" width="300"/>
-
 
 </div>
 
