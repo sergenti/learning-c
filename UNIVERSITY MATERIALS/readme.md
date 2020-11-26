@@ -35,8 +35,6 @@ Il corso introduce le tematiche e i concetti di base dell'Informatica. In una pr
 
 Si passa quindi allo studio delle tecniche di programmazione, utilizzando come linguaggio il C. Sono discusse le strutture dati, le strutture di controllo, l'uso dei puntatori, la definizione e utilizzo di funzioni e procedure.
 
-La terza parte del corso, infine, discute la struttura e le applicazioni del linguaggio Matlab.
-
 Il corso include una attività di laboratorio durante la quale gli allievi dovranno sviluppare individualmente programmi in C proposti dal docente.
 
 ## Prerequisiti:
@@ -57,7 +55,6 @@ Ad essa si affianca la partecipazione obbligatoria all'attività di laboratorio 
 ## Materiale didattico:
 
 - Jeri R. Hanly, Elliot B. Koffman, Problem solving e programmazione in C, Apogeo.
-- A. Morzenti, A. Campi, E. Di Nitto Introduzione alla programmazione in Matlab, Esculapio.
 
 </br>
 
