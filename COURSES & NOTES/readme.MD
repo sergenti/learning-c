@@ -1,3 +1,5 @@
+<div align="center">
+
 # Random courses from the internet
 
 </br>
@@ -8,3 +10,6 @@
 | Advanced C           | https://www.youtube.com/playlist?list=PLVlQHNRLflP_OxF1QJoGBwH_TnZszHR_j      |
 | Data Structures      | https://www.youtube.com/playlist?list=PLVlQHNRLflP8IGz6OXwlV_lgHgc72aXlh      |
 | Technical Interviews | https://www.youtube.com/playlist?list=PLVlQHNRLflP84oVpQM8HPgT67PMb4Zl7n      |
+
+
+</div>
