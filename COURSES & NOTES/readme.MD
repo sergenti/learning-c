@@ -1,7 +1,10 @@
-1 https://www.codebreakthrough.com/courses/c-programming-crash-course beginner
+# Random courses from the internet
 
-2 https://www.youtube.com/playlist?list=PLVlQHNRLflP84oVpQM8HPgT67PMb4Zl7n technical interviews
+</br>
 
-3 https://www.youtube.com/playlist?list=PLVlQHNRLflP_OxF1QJoGBwH_TnZszHR_j data structures
-
-4 https://www.youtube.com/playlist?list=PLVlQHNRLflP8IGz6OXwlV_lgHgc72aXlh C advanced
+| Content              | Links                                                                         |
+| -------------------- |:-----------------------------------------------------------------------------:|
+| C crashcourse        | https://www.codebreakthrough.com/courses/c-programming-crash-course           |
+| Advanced C           | https://www.youtube.com/playlist?list=PLVlQHNRLflP_OxF1QJoGBwH_TnZszHR_j      |
+| Data Structures      | https://www.youtube.com/playlist?list=PLVlQHNRLflP8IGz6OXwlV_lgHgc72aXlh      |
+| Technical Interviews | https://www.youtube.com/playlist?list=PLVlQHNRLflP84oVpQM8HPgT67PMb4Zl7n      |
