@@ -13,7 +13,8 @@
 
 </br>
 
- ## this repository could easily be a fan page for indian coding teachers, lov u guys your tutorial are awesome
+ ## this repository could easily be a fan page for indian coding teachers,
+ ## love you guys your tutorial are awesome
 
 ![22528799_1434227349946281_5222889660587038615_o](https://user-images.githubusercontent.com/55017307/100444830-6a3fb400-30ac-11eb-852e-1f8bddbe374b.jpg)
 
