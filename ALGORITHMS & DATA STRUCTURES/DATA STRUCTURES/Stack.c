@@ -1,148 +1,77 @@
-// Stack implementation using STATIC array
+// Stack Implementation in C
 
-// Libraries
-#include <stdlib.h>
 #include <stdio.h>
 #include <stdbool.h>
 
-// Pre-Processor MACRO
-#define CAPACITY 10
+#define STACK_CAPACITY 8
 
-// Prototypes
-void instruct(int *choice);
+int stack[8];
+int top = -1;
 
-bool isFull(int *top);
-bool isEmpty(int *top);
-int peak(int stack[], int *top);
-void pop(int stack[], int *top);
-void traverse(int stack[], int *top);
-void push(int element, int *stack, int *top);
-
-int main()
+bool isEmpty()
 {
-    // if top: -1 stack is empty
-    int stack[CAPACITY];
-    int top = -1;
-
-    int choice;
-    bool execution = true;
-
-    while (execution)
-    {
-        instrcut(&choice);
-
-        switch (choice)
-        {
-        case 1:
-            push();
-        case 2:
-            pop();
-        case 3:
-            peak();
-        case 5:
-            exit(0);
-        default:
-            printf("invalid input");
-        }
-    }
+    return (top == -1) ? true : false;
 }
 
-/* ===============================================================
-** INSTRCUT FUNCTION: gives instrcutions & collects user's choice
-*/
-
-void instruct(int *choice)
+bool isFull()
 {
-    printf("Stack Implementation Inferface\n");
-    printf("Enter your Choice:\n\n");
-
-    printf("1) Push\n");
-    printf("2) Pop\n");
-    printf("3) Peek\n");
-    printf("4) Traverse\n");
-    printf("5) Quit\n");
-
-    scanf("%d", choice);
+    return (top == STACK_CAPACITY) ? true : false;
 }
 
-/* ===============================================================
-** IS EMPTY FUNCTION: gives instrcutions & collects user's choice
-*/
-
-bool isEmpty(int *top)
+int peek()
 {
-    return (*top == -1) ? true : false;
+    return stack[top];
 }
 
-/* ===============================================================
-** IS FULL FUNCTION: gives instrcutions & collects user's choice
-*/
-
-bool isFull(int *top)
+int pop()
 {
-    return (*top == CAPACITY - 1) ? true : false;
-}
-
-/* ===============================================================
-** PUSH FUNCTION: gives instrcutions & collects user's choice
-*/
-
-void push(int element, int stack[], int *top)
-{
-    // cannot store directly, check if there is free space left
-    if (isFull(top))
-        printf("ERROR: stack is full!");
+    if (isEmpty())
+        printf("Could not retrieve data, Stack is empty.\n");
     else
-    {
-        top++;
-        stack[*top] = element;
-        printf("\nelement %d pushed into the stack\n", element);
-    }
+        return stack[top--];
 }
 
-/* ===============================================================
-** POP FUNCTION: gives instrcutions & collects user's choice
-*/
-
-void pop(int stack[], int *top)
+int push(int data)
 {
-    // cannot store directly, check if there is space occipied
-    if (isEmpty(top))
-        printf("ERROR: nothing to pop!");
+    if (isFull())
+        printf("Could not insert data, Stack is full.\n");
     else
-    {
-        int element = stack[*top];
-        top--;
-        printf("\nelement %d popped from the stack\n", element);
-    }
+        stack[top++] = data;
 }
 
-/* ===============================================================
-** PEAK FUNCTION: gives instrcutions & collects user's choice
-*/
-
-int peak(int stack[], int *top)
+void traverse()
 {
-    if (isEmpty(top))
-        printf("ERROR: nothing to peak!");
-    else
-    {
-        printf("top element of stack is: %d", stack[*top]);
-        return stack[*top];
-    }
-}
-
-/* ===============================================================
-** TRAVERSE FUNCTION: gives instrcutions & collects user's choice
-*/
-
-void traverse(int stack[], int *top)
-{
-    if (isEmpty(top))
+    if (isEmpty())
         printf("ERROR: nothing to traverse!");
     else
     {
-        for (int i = *top; i <= 0; i--)
+        for (int i = top; i <= 0; i--)
             printf("stack[%d] = %d", i, stack[i]);
     }
+}
+
+int main()
+{
+    // push items on to the stack
+    push(3);
+    push(5);
+    push(9);
+    push(1);
+    push(12);
+    push(15);
+
+    printf("Element at top of the stack: %d\n", peek());
+    printf("Elements: \n");
+
+    // print stack data
+    while (!isEmpty())
+    {
+        int data = pop();
+        printf("%d\n", data);
+    }
+
+    printf("Stack full: %s\n", isFull() ? "true" : "false");
+    printf("Stack empty: %s\n", isEmpty() ? "true" : "false");
+
+    return 0;
 }
