@@ -33,7 +33,7 @@ int main()
 
     how can we make it dynamic?
 
-    declaring int pointer variale
+    declaring int pointer variable
     allocating using calloc() and reallocating using realloc()
 
     */
@@ -56,7 +56,7 @@ int main()
     we can perform operation only regarding the first element of the stack
 
     IMPLEMENTING USING STATIC STACKS
-    int capacity = 5; // NO it is beter to use a MACRO
+    int capacity = 5; // NO it is better to use a MACRO
 
     important: in every programming language you CANNOT delete memory, you can just
     make the pointer pointing to a variable null, data is still there, if that cell will be used again, we would just overwrite
@@ -110,7 +110,7 @@ void push(int element, int stack[], int *top)
 
 void pop(int stack[], int *top)
 {
-    // cannot store directly, check if there is space occipied
+    // cannot store directly, check if there is space occupied
     if (isEmpty(top))
         printf("ERROR: nothing to pop!");
     else

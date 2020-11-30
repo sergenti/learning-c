@@ -142,7 +142,7 @@ int main()
         case 5:
             exit(0);
         default:
-            printf("\n\033[1;31minvalid input\033[0m\n\n");
+            printf("\n\033[1;31mInvalid input\033[0m\n\n");
         }
     }
 }
