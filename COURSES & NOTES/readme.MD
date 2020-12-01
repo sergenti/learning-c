@@ -20,4 +20,9 @@
 
 ![22528799_1434227349946281_5222889660587038615_o](https://user-images.githubusercontent.com/55017307/100444830-6a3fb400-30ac-11eb-852e-1f8bddbe374b.jpg)
 
+
+![portrait-indian-computer-programmer-in-turban-caia-imagescience-photo-library](https://user-images.githubusercontent.com/55017307/100768676-75237d00-33fb-11eb-8f1c-962b8d6a7b2d.jpg)
+
+
+
 </div>
