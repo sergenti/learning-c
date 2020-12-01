@@ -7,5 +7,9 @@ void main()
     printf("%d", a); // 7 (int)
 }
 
-//    printf return how many characters were printed (int type)
-//    output : "welcome7"
+/*
+
+printf return how many characters were printed (int type)
+output : "welcome7"
+
+*/

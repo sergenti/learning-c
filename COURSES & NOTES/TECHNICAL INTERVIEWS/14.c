@@ -9,14 +9,18 @@ void main()
     printf("%d", s);
 }
 
-// square() is the name of the macro
-// macros are defined using preprocessor directives (#define)
+/*
 
-// macro is substitution, replacement
-// in the place of the macro called the macro body is substituted
+square() is the name of the macro
+macros are defined using preprocessor directives (#define)
 
-// before compilation there is preprocessing, takes place inside source code
-// #define macroname macrobody
+macro is substitution, replacement
+in the place of the macro called the macro body is substituted
+
+before compilation there is preprocessing, takes place inside source code
+#define macroname macrobody
+
+*/
 
 void main()
 {
@@ -29,5 +33,6 @@ void main()
 
 // Changes recommended if you want to get 36: ADD BRACKETS!
 #define square(x) (x) * (x)
+
 // or just do this
 s = square(6);

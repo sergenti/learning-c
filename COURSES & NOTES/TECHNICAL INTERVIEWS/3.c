@@ -7,9 +7,13 @@ void main()
     printf("%d", a);                    // 7
 }
 
-//    PRINTF  is both a method and a function
+/*
 
-//    1) displys something in the terminal
-//    2) return how many characters were there (no neec for \0)
+PRINTF  is both a method and a function
 
-//    output: "GoodBoy7"
+1) displays something in the terminal
+2) return how many characters were there (no need for \0)
+
+output: "GoodBoy7"
+
+*/

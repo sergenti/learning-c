@@ -9,10 +9,14 @@ void main()
         printf("%d\t", x);
 }
 
-// CHAR, if you don't specify the character it will just be a signed character (by default)
+/*
 
-// LIMITS OF SIGNED CHAR -128 to +127 (C2)
+CHAR, if you don't specify the character it will just be a signed character (by default)
 
-// 121, 122 ... 127 after that  the next value will be -128 witch is less than 0, no loop
+LIMITS OF SIGNED CHAR -128 to +127 (C2)
 
-// see image below
+121, 122 ... 127 after that  the next value will be -128 witch is less than 0, no loop
+
+see image below
+
+*/

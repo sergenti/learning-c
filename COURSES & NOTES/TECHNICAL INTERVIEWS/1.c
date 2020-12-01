@@ -8,12 +8,13 @@ void main()
 
 /*
 
-the output is an ERROR => compile-time error [lValue Requiered
+the output is an ERROR => compile-time error [lValue Required]
 
-PRE-incement operator can only be used on variables
+PRE-increment operator can only be used on variables
 not on expressions
 not on costant
 
 ++var != var++
 PRE      POST
 
+*/

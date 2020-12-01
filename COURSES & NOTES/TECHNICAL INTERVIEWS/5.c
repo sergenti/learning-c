@@ -7,8 +7,12 @@ void main()
     printf("%c", ch);
 }
 
-//    chacater constant stored in the form the binary of its ASCII value
-//    ASCI CODE OF A IS 65
+/*
 
-//    1 character stored in 1 byte (8 bits)
-//    output: 'B'
+chacater constant stored in the form the binary of its ASCII value
+ASCI CODE OF A IS 65
+
+1 character stored in 1 byte (8 bits)
+output: 'B'
+
+*/

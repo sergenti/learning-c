@@ -7,20 +7,24 @@ void main()
     printf("&d", i);
 }
 
-//    10      -      decimal integer constant          -       (nothing)
+/*
 
-//    010     -      octal integer constant            -       (preceded with 0)
+10      -      decimal integer constant          -       (nothing)
 
-//    0x20    -      hexodecimal integer constaant     -       (preceded with 0x)
+010     -      octal integer constant            -       (preceded with 0)
 
-//    10 octal = 8 decimal
-//    20 hex = 32 decimal
+0x20    -      hexadecimal integer constaant     -       (preceded with 0x)
 
-//    why converting to decimal???
+10 octal = 8 decimal
+20 hex = 32 decimal
 
-//    %d - to print value in integer format.
-//    %o - to print value in octal format.
-//    %x - to print value in hexadecimal format (letters will print in lowercase)
-//    %X - to print value in hexadecimal format (letters will print in uppercase)
+why converting to decimal???
 
-//    output: 10 + 8 + 32 = 50
+%d - to print value in integer format.
+%o - to print value in octal format.
+%x - to print value in hexadecimal format (letters will print in lowercase)
+%X - to print value in hexadecimal format (letters will print in uppercase)
+
+output: 10 + 8 + 32 = 50
+
+*/

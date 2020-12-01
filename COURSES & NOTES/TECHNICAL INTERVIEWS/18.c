@@ -10,14 +10,18 @@ void main()
         printf("i: %d\n", i);
 }
 
-// CONDITIONAL  (trionitary operator)  ?:
+/* 
 
-// by the way there is a difference between:
+CONDITIONAL  (trionitary operator)  ?:
 
-// i = 1                does not modify the value
-// i = i + 1   (++i)     modifies the value
+by the way there is a difference between:
 
-// if false the loop will gte terminated, no chance to tun --j
+i = 1                does not modify the value
+i = i + 1   (++i)     modifies the value
 
-// OUTPUT:
-// i=1
+if false the loop will gte terminated, no chance to tun --j
+
+OUTPUT:
+i=1
+
+*/

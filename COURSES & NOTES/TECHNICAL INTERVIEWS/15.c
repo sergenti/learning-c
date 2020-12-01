@@ -19,16 +19,20 @@ void main()
     }
 }
 
-// the DEFAULT CASE can be put anywhere in the switch/case statement
-// in general practice it is placed at the end
+/*
 
-// BUT DEFAULT HAS NO BREAK;
-// so next line is executed
+the DEFAULT CASE can be put anywhere in the switch/case statement
+in general practice it is placed at the end
 
-// output:  Oracle C
+BUT DEFAULT HAS NO BREAK;
+so next line is executed
 
-// case 3 also has no break but execution ends before reaching it.
-// in the case where i=3; since is the last case no other cases will be executed
+output:  Oracle C
 
-// BREAK: keyword, flow/jump control statement
-// BREAK TERMINATES OTHER CASES WITHOUT EXECUTION
+case 3 also has no break but execution ends before reaching it.
+in the case where i=3; since is the last case no other cases will be executed
+
+BREAK: keyword, flow/jump control statement
+BREAK TERMINATES OTHER CASES WITHOUT EXECUTION
+
+*/

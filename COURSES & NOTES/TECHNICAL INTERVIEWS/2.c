@@ -2,7 +2,7 @@
 
 void main()
 {
-    printf("%X", -1 << 4); // %X stands for hexodecimals
+    printf("%X", -1 << 4); // %X stands for hexadecimals
 }
 
 /*
@@ -20,10 +20,11 @@ evaluate complement :            1111 1111 1111 1110
 add binary bit 1 to complement:  1111 1111 1111 1111
 
 
-.             APPLY LEFT SHIF OPERATOR BY 4
+.             APPLY LEFT SHIFT OPERATOR BY 4
 
-c2(-1):              1111 1111 1111 1111
-shifted:        1111 1111 1111 1111 0000 (we lost the first 4 bits)
+C2(-1):                          1111 1111 1111 1111
+shifted:                    1111 1111 1111 1111 0000 (we lost the first 4 bits)
+binary input:                    1111 1111 1111 0000
+hex output:                        F    F    F    0
 
-binary input:       1111 1111 1111 0000
-hex output:           F    F    F    0
+*/
