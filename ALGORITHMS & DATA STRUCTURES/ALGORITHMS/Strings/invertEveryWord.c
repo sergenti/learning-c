@@ -4,12 +4,6 @@
 #define STRING_LENGTH 100
 #define WORD_LENGTH 20
 
-#include <stdio.h>
-#include <string.h>
-
-#define STRING_LENGTH 100
-#define WORD_LENGTH 20
-
 int main()
 {
 

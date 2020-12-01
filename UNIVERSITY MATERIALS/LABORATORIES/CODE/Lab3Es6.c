@@ -16,11 +16,11 @@
 
 typedef enum
 {
-    lunedi,
-    martedi,
-    mercoledi,
-    giovedi,
-    venerdi,
+    lunedì,
+    martedì,
+    mercoledì,
+    giovedì,
+    venerdì,
     sabato,
     domenica
 } giorni;
@@ -53,18 +53,18 @@ int main()
             numAppuntamenti[g - 1]++;
             break;
         case 2: //Stampa Settimana
-            for (giorni i = lunedi; i <= domenica; i++)
+            for (giorni i = lunedì; i <= domenica; i++)
             {
-                if (i == lunedi)
-                    printf("Lunedi':\n");
-                else if (i == martedi)
-                    printf("Martedi':\n");
-                else if (i == mercoledi)
-                    printf("Mercoledi':\n");
-                else if (i == giovedi)
-                    printf("Giovedi':\n");
-                else if (i == venerdi)
-                    printf("Venerdi':\n");
+                if (i == lunedì)
+                    printf("Lunedì':\n");
+                else if (i == martedì)
+                    printf("Martedì':\n");
+                else if (i == mercoledì)
+                    printf("Mercoledì':\n");
+                else if (i == giovedì)
+                    printf("Giovedì':\n");
+                else if (i == venerdì)
+                    printf("Venerdì':\n");
                 else if (i == sabato)
                     printf("Sabato:\n");
                 else if (i == domenica)
