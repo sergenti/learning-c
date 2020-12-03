@@ -8,6 +8,8 @@ a*b = a + a + a + ... + a (a summed to itself b times)
 
 */
 
+// RECURSIVE
+
 int multiply(int a, int b)
 {
     int ans;
@@ -16,4 +18,13 @@ int multiply(int a, int b)
     else
         ans = a + multiply(a, b - 1);
     return ans;
+}
+
+// ITERATIVE
+
+int multiply(int a, int b)
+{
+    for (int i = 1; i < b; i++)
+        a += a;
+    return a;
 }
