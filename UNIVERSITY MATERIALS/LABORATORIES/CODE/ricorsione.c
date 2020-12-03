@@ -114,30 +114,31 @@ int minimo (int val[], int len){
 float taylor(float x, float N);
 float fattoriale(int n);
 
-int main ()
+int main()
 {
     float N, x;
-    
+
     printf("Inserisci x: ");
-    scanf("%f",&x);
+    scanf("%f", &x);
     printf("Inserisci N: ");
-    scanf("%f",&N);
-    
-    printf("L'approssimazione di sin(%.2f) di Taylor con N = %.0f = %.2f\n",x,N,taylor(x/180.0*M_PI, N));
+    scanf("%f", &N);
+
+    printf("L'approssimazione di sin(%.2f) di Taylor con N = %.0f = %.2f\n", x, N, taylor(x / 180.0 * M_PI, N));
     return 0;
 }
 
-float taylor(float x, float N){
-    if (N==0)
+float taylor(float x, float N)
+{
+    if (N == 0)
         return x;
     else
-        return (pow(-1,N) * pow(x,2*N+1) / (fattoriale(2*N+1))) + taylor(x, N-1);
+        return (pow(-1, N) * pow(x, 2 * N + 1) / (fattoriale(2 * N + 1))) + taylor(x, N - 1);
     return 0;
-    
 }
-float fattoriale(int n){
-    if ((n==0) || (n==1))
+float fattoriale(int n)
+{
+    if ((n == 0) || (n == 1))
         return 1;
     else
-        return n*fattoriale(n-1);
+        return n * fattoriale(n - 1);
 }
