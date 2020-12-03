@@ -1,21 +1,17 @@
-// Get the number n (n>0) to return the reversed sequence from n to 1.
+// Reversing an array
 
-// Example : n=5 >> [5,4,3,2,1]
+#include <stdio.h>
+#define SIZE 10
+int array[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+int arrayReversed[SIZE];
 
-/* Note: allocate memory yourself */
-/* return NULL in case num == 0 */
-
-#include <stdlib.h>
-
-int *reverse_seq(int num)
+int reverse_sequence()
 {
-    if (num == 0)
-        return NULL;
-    int *res = (int *)malloc(sizeof(int) * num);
-    int *resHead = res;
-    while (num)
+    int j = 0;
+    for (int i = SIZE - 1; i >= 0; i--)
     {
-        *res++ = num--;
+        arrayReversed[j] = array[i];
+        printf("arrayReversed[%d] = %d\n", j, array[i]);
+        j++;
     }
-    return resHead;
 }

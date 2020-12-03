@@ -1,15 +1,34 @@
 #define SIZE 10
-int array[];
+float array[];
 
-int arraySum(int array[])
+// all in one
+
+float arrayMean(float array[])
 {
-    int somma = 0;
+    float sum = 0;
+
     for (int i = 0; i < SIZE; i++)
-        somma += array[i];
-    return somma;
+    {
+        sum += array[i];
+    }
+
+    return sum / SIZE;
 }
 
-int arrayMean(int array[])
+/*=================================================================*/
+/*=================================================================*/
+
+// splitted in 2 functions
+
+float arraySum(float array[])
+{
+    float sum = 0;
+    for (int i = 0; i < SIZE; i++)
+        sum += array[i];
+    return sum;
+}
+
+float arrayMean(float array[])
 {
     return arraySum(array) / SIZE;
 }
