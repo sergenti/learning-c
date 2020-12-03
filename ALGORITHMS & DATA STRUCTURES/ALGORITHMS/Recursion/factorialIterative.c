@@ -1,17 +1,4 @@
-#include <stdio.h>
 
-// Basic
-factorial(n)
-{
-    int ans = 1;
-
-    if (n == 0 || n == 1) // Base case
-        ans = 1;
-    else
-        ans += factorial(n - 1);
-}
-
-// Best
 unsigned long long factorialOf(int number)
 {
     unsigned long long factorial = 1;
