@@ -9,8 +9,8 @@
 | Content                | Links                                                                         |
 | :--------------------: |:-----------------------------------------------------------------------------:|
 | C Crash Course         | https://www.codebreakthrough.com/courses/c-programming-crash-course           |
-| Advanced C             | https://www.youtube.com/playlist?list=PLVlQHNRLflP_OxF1QJoGBwH_TnZszHR_j      |
-| Data Structures        | https://www.youtube.com/playlist?list=PLVlQHNRLflP8IGz6OXwlV_lgHgc72aXlh      |
+| Advanced C             | https://www.youtube.com/playlist?list=PLVlQHNRLflP8IGz6OXwlV_lgHgc72aXlh      |
+| Data Structures        | https://www.youtube.com/playlist?list=PLVlQHNRLflP_OxF1QJoGBwH_TnZszHR_j      |
 | Technical Interviews   | https://www.youtube.com/playlist?list=PLVlQHNRLflP84oVpQM8HPgT67PMb4Zl7n      |
 
 </br>
