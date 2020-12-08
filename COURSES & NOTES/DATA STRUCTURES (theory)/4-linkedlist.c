@@ -8,8 +8,10 @@ typedef struct node
     struct node *link; // pointing to an user defined data
 } node;
 
-void append(node *root);
-int length(node *root);
+node *root = NULL;
+
+void append();
+int length();
 
 int main()
 {
@@ -52,8 +54,7 @@ int main()
 
     */
 
-    node *root = NULL;
-    root = (node *)malloc(sizeof(node)); // always we are maintaining the root, first node address
+    // root = (node *)malloc(sizeof(node)); // always we are maintaining the root, first node address
 
     /*
 
@@ -78,7 +79,7 @@ int main()
 // Root is GLOBAL (available to everyone)
 
 // Adding at the end
-void append(node *root)
+void append()
 {
     node *temp;
     temp = (node *)malloc(sizeof(struct node));
@@ -99,7 +100,7 @@ void append(node *root)
     }
 }
 
-int length(node *root)
+int length()
 {
     node *temp;
     temp = root;
@@ -114,7 +115,7 @@ int length(node *root)
     return count;
 }
 
-void addAtBeginning(node *root)
+void addAtBeginning()
 {
     node *temp;
     temp = (node *)malloc(sizeof(struct node));
@@ -128,5 +129,44 @@ void addAtBeginning(node *root)
     {
         temp->link = root; // right connection first
         root->link = temp;
+    }
+}
+
+// deleting a node
+
+void delete ()
+{
+    node *temp;
+    int location;
+
+    printf("enter location to delete");
+    scanf("%d", location);
+
+    if (location > length())
+    {
+        printf("invalid location");
+    }
+    else if (location == 1)
+    { // deleting the first node
+        temp = root;
+        root = temp->link;
+        temp->link = NULL;
+        free(temp);
+    }
+    else
+    {
+        int i;
+        node *p = root;
+        node *q;
+
+        while (i < location - 1)
+        { // works both in between and at the end
+            p = p->link;
+            i++;
+            q = p->link;
+            p->link = q->link;
+            q->link = NULL;
+            free(q);
+        }
     }
 }

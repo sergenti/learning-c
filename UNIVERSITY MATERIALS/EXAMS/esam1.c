@@ -53,6 +53,7 @@ int main(int argc, const char *argv[])
     float gain, media;
     float arrayVen[100];
     int k;
+
     p_coin coins = NULL;
     p_proprietari proprietari = NULL;
 

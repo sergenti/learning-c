@@ -52,7 +52,7 @@ bool isEmpty()
 ** APPEND FUNCTION: adds element at the end of the list
 */
 
-void append()
+node append()
 {
     node *temp;
     temp = (node *)malloc(sizeof(struct node));
@@ -118,6 +118,25 @@ void delete ()
 */
 
 void getLength()
+{
+    node *temp;
+    temp = root;
+
+    int count = 0;
+    while (temp != NULL)
+    {
+        count++;
+        temp = temp->link;
+    }
+
+    printf("length is: %d", count);
+}
+
+/* ======================================================================
+** LENGTH FUNCTION: return how many nodes are in the list, we are not counting the root
+*/
+
+void sum()
 {
     node *temp;
     temp = root;
