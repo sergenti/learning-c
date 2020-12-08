@@ -13,7 +13,7 @@ int main()
     char string[STRING_LENGTH];
     char stringInFarfallese[STRING_LENGTH];
     printf("write something here > ");
-    scanf("%s", string);
+    fgets(string, STRING_LENGTH, stdin);
 
     // find a vowel in the string,
     // add F or f depending on the case afterwards
@@ -34,8 +34,11 @@ int main()
             stringInFarfallese[count++] = 'F';
         }
         else
+        {
             stringInFarfallese[count++] = string[i];
+        }
     }
 
+    // Output
     printf("%s", stringInFarfallese);
 }
