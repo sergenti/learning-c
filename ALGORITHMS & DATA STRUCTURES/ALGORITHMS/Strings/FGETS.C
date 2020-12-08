@@ -1,0 +1,1 @@
+// fgets(name, MAX_NAME_SZ, stdin);

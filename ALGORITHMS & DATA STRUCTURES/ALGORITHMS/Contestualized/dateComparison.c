@@ -65,6 +65,8 @@ void compareDate(date d1, date d2)
         printDate(d1);
     else if (d1.year == d2.year && d1.month == d2.month && d1.day > d2.day)
         printDate(d1);
+    else if (d1.year == d2.year && d1.month == d2.month && d1.day == d2.day)
+        printf("same date");
     else
         printDate(d2);
 }
