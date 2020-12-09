@@ -14,15 +14,44 @@ int main()
     fillMatrix(matrix);
     printMatrix(matrix);
 
-    // check if there is a row or column of all negatives elements;
-    int row = 0, column = 0;
-    for (int i = 0; i < ROW_LENGTH; i++)
-    {
+    int found; // 1 if found, 0 if not
+    int valid; // 1 ho rispettato condizione
 
-        for (int j = 0; j < COLUMN_LENGTH; j++)
+    int row = 0, column = 0;
+
+    // Analyze Rows
+    for (row = 0; row < ROW_LENGTH; row++)
+    {
+        found = 1;
+
+        for (column = 0; column < COLUMN_LENGTH; column++)
         {
+            if (matrix[row][column] > 0)
+                found = 0;
         }
+
+        if (found == 1)
+            valid = 1;
     }
+
+    // Analyze Columns
+    for (column = 0; column < COLUMN_LENGTH; column++)
+    {
+        found = 1;
+
+        for (row = 0; row < ROW_LENGTH; row++)
+        {
+
+            if (matrix[row][column] > 0)
+                found = 0;
+        }
+
+        if (found == 1)
+            valid = 1;
+    }
+
+    if (valid)
+        printf("matrix contains at lest a row or a column negative");
 }
 
 /*=======================================================================================
