@@ -1,21 +1,22 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct node
+typedef struct node
 {
     int value;
-    struct node *next;
-};
+    node *next;
+} node;
 
-void push_back(struct node **, int);
-void push_front(struct node **, int);
-int pop_back(struct node **);
-int pop_front(struct node **);
-void print(struct node *);
+node *head = NULL;
+
+void push_back(node **, int x);
+void push_front(node **, int x);
+int pop_back(node **);
+int pop_front(node **);
+void print(node *);
 
 int main()
 {
-    struct node *head = NULL;
 
     printf("Rimosso: %i\n", pop_front(&head));
     push_front(&head, 7);
@@ -30,10 +31,9 @@ int main()
     return 0;
 }
 
-void push_back(struct node **phead, int v)
+void push_back(node **phead, int v)
 {
-    struct node *head = *phead;
-    struct node *np = (struct node *)malloc(sizeof(struct node));
+    node *np = (node *)malloc(sizeof(node));
     np->next = NULL;
     np->value = v;
     if (head == NULL)
@@ -48,10 +48,10 @@ void push_back(struct node **phead, int v)
     }
 }
 
-void push_front(struct node **phead, int v)
+void push_front(node **phead, int v)
 {
-    struct node *np = (struct node *)malloc(sizeof(struct node));
-    struct node *head = *phead;
+    node *np = (node *)malloc(sizeof(node));
+    node *head = *phead;
     np->value = v;
     if (head == NULL)
     {
@@ -65,9 +65,9 @@ void push_front(struct node **phead, int v)
     }
 }
 
-int pop_back(struct node **phead)
+int pop_back(node **phead)
 {
-    struct node *head = *phead, *prevhead;
+    node *head = *phead, *prevhead;
     int v;
     if (head == NULL)
     {
@@ -96,9 +96,9 @@ int pop_back(struct node **phead)
     return v;
 }
 
-int pop_front(struct node **phead)
+int pop_front(node **phead)
 {
-    struct node *head = *phead, *t;
+    node *head = *phead, *t;
     int v;
     if (head == NULL)
     {
@@ -114,7 +114,7 @@ int pop_front(struct node **phead)
     }
 }
 
-void print(struct node *head)
+void print(node *head)
 {
     if (head == NULL)
         return;
